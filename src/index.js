@@ -5,10 +5,12 @@ import './index.css';
 import {createBrowserRouter,
         RouterProvider } from "react-router-dom";
 import Root from "./routes/Root";
+import ErrorPage from './ErrorPage';
 const router=createBrowserRouter([
   {
     path:"/",
-    element:<Root/>
+    element:<Root/>,
+    errorElement:<ErrorPage/>
   },
 ])
 
